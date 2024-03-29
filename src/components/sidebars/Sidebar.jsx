@@ -107,7 +107,9 @@ const Sidebar = () => {
           </ListItem>
           <AccordionBody className="py-1">
             <List className="p-0">
-              <ListItem>Balance Sheet</ListItem>
+              <Link to="/user/balance-sheet">
+                <ListItem>Balance Sheet</ListItem>
+              </Link>
               <ListItem>Income Statement</ListItem>
               <ListItem>Statement of Cash Flow</ListItem>
             </List>
