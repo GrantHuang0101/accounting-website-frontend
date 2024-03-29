@@ -92,25 +92,27 @@ const BalanceSheet = () => {
         />
         <div>(Round in dollars)</div>
       </div>
-      <div className="flex flex-col items-center mt-2">
+      <div className="flex flex-row justify-center space-x-2">
         <div>
-          <BSAssetsTable assets={assets} date={selectedDate} />
-        </div>
-      </div>
-
-      <div className="flex flex-col items-center mt-2">
-        <div>LIABILITIES & EQUITY</div>
-        <div>
-          <div>
-            <div>Liabilities</div>
+          <div className="flex flex-col items-center mt-2">
             <div>
-              <BSLiabTable liabilities={liabilities} />
+              <BSAssetsTable assets={assets} date={selectedDate} />
             </div>
           </div>
-          <div>
-            <div>Equity</div>
+        </div>
+        <div>
+          <div className="flex flex-col items-center mt-2">
             <div>
-              <BSEquityTable equity={equity} />
+              <div>
+                <div>
+                  <BSLiabTable liabilities={liabilities} date={selectedDate} />
+                </div>
+              </div>
+              <div>
+                <div>
+                  <BSEquityTable equity={equity} date={selectedDate} />
+                </div>
+              </div>
             </div>
           </div>
         </div>

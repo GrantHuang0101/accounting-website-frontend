@@ -73,8 +73,8 @@ const BSAssetsTable = ({ assets, date }) => {
           <Table.Body>
             <Table.Row className="bg-gray">
               <Table.Cell className="font-bold ">Total Assets: </Table.Cell>
-              <Table.Cell className="font-bold text-end">
-                {formatNumber(totalSum)}
+              <Table.Cell className="font-bold text-end underline">
+                ${"  " + formatNumber(totalSum)}
               </Table.Cell>
             </Table.Row>
           </Table.Body>
