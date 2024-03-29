@@ -34,10 +34,6 @@ const BalanceSheet = () => {
           (transaction) =>
             new Date(transaction.transactionDate) <= new Date(selectedDate)
         );
-        const filteredPrevTransactions = transactions.filter(
-          (transaction) =>
-            new Date(transaction.transactionDate) <= new Date(prevDate)
-        );
 
         // Initialize variables to hold categorized transactions
         let assetTransactions = [];
@@ -89,15 +85,14 @@ const BalanceSheet = () => {
       <div className="flex flex-col items-center">
         <div>Company Name</div>
         <div>BALANCE SHEET</div>
-        <div>Date</div>
         <Datepicker
           name="selectedDate"
           value={selectedDate}
           onSelectedDateChanged={handleDatePickerChange}
         />
+        <div>(Round in dollars)</div>
       </div>
       <div className="flex flex-col items-center mt-2">
-        <div>ASSETS</div>
         <div>
           <BSAssetsTable assets={assets} date={selectedDate} />
         </div>
