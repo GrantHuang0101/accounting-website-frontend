@@ -27,8 +27,6 @@ export default API_BASE_URL;
 
 ## Features in process
 
-1. Financial Reports
-2. Home pages
-3. User profile & Setting
-4. Quick-add transactions
-5. Part of Analytics
+1. User profile & Setting
+2. Quick-add transactions
+3. Part of Analytics
