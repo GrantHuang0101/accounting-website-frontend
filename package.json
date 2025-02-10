@@ -18,12 +18,14 @@
     "axios": "^1.6.5",
     "date-fns": "^3.1.0",
     "flowbite-react": "^0.7.2",
+    "jspdf": "^2.5.1",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.1",
-    "sort-by": "^1.2.0"
+    "sort-by": "^1.2.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

@@ -17,6 +17,7 @@ import QuickAdd from "../views/dashborad/quick-add/QuickAdd";
 import PLManagement from "../views/dashborad/profit-loss-management/PLManagement";
 import CashFlowAnalytics from "../views/dashborad/analytics/CashFlowAnalytics";
 import CashTransactionDetail from "../views/dashborad/analytics/CashTransactionDetail";
+import BalanceSheet from "../views/financialReports/BalanceSheet";
 
 const router = createBrowserRouter([
   {
@@ -79,10 +80,21 @@ const router = createBrowserRouter([
         path: "/user/custom-transactions/delete/:id",
         element: <DeleteTransaction />,
       },
-
       {
         path: "/user/profit&loss-management",
         element: <PLManagement />,
+      },
+      {
+        path: "/user/balance-sheet",
+        element: <BalanceSheet />,
+      },
+      {
+        path: "/user/balance-sheet", // For I/S
+        element: <BalanceSheet />,
+      },
+      {
+        path: "/user/balance-sheet", // For C/F
+        element: <BalanceSheet />,
       },
     ],
   },
